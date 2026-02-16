@@ -34,3 +34,16 @@ monitoring:
 logging:
   # 로그 레벨 (DEBUG, INFO, WARNING, ERROR, CRITICAL)
   level: 'INFO'
+
+# 자동 삭제 설정
+auto_delete:
+  # 자동 삭제 활성화 여부
+  enabled: false
+  
+  # 녹화본 보관 기간 (일)
+  # 이 기간보다 오래된 녹화본은 자동으로 삭제됩니다
+  retention_days: 30
+  
+  # 삭제 작업 실행 간격 (초)
+  # 이 간격마다 오래된 파일을 검색하여 삭제합니다
+  check_interval: 3600
